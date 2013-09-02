@@ -1,0 +1,21 @@
+{
+  "name": "canvas",
+  "version": "0.0.1",
+  "description": "playing with canvas",
+  "main": "canvas.html",
+  "scripts": {
+    "test": "what is this?"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dannyid/canvas.git"
+  },
+  "author": "danny",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/dannyid/canvas/issues"
+  },
+  "dependencies": {
+    "jquery": "~1.8.3"
+  }
+}

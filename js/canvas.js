@@ -21,8 +21,8 @@ function lines() {
         c.moveTo(100+i, 100);
         c.lineTo(100+i, 500);
         c.stroke();
-        i = i + 8;
-        setTimeout(lines,20);
+        i = i + 15;
+        setTimeout(lines,10);
     } else {
         i = 0;
         c.strokeStyle = "white";
@@ -34,8 +34,8 @@ function lines() {
         c.moveTo(100+i, 100);
         c.lineTo(100+i, 500);
         c.stroke();
-        i = i + 8;
-        setTimeout(lines,20);
+        i = i + 15;
+        setTimeout(lines,10);
     };
 };
 

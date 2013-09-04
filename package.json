@@ -16,6 +16,7 @@
     "url": "https://github.com/dannyid/canvas/issues"
   },
   "dependencies": {
-    "jquery": "~1.8.3"
+    "jquery": "~1.8.3",
+    "jsdom": "~0.8.4"
   }
 }

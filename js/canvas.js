@@ -1,42 +1,28 @@
 
 var c = document.getElementById("canvas").getContext("2d");
-
-//c.beginPath();
-//c.moveTo(100,100);
-//c.lineTo(500,500);
-//c.lineTo(100,500);
-//c.closePath();
-//c.stroke();
-
 var i = 0;
+var color = "black";
 
 function lines() {
-    if (i <= 400) {
-        c.strokeStyle = "black";
+    if (i <= 600) {
+        c.strokeStyle = color ;
+        c.lineWidth = 4;
+        
         c.beginPath();
-        c.moveTo(100, 100+i);
-        c.lineTo(500, 100+i);
+        c.moveTo(i, 0);
+        c.lineTo(i, 600);
         c.stroke();
+
         c.beginPath();
-        c.moveTo(100+i, 100);
-        c.lineTo(100+i, 500);
+        c.moveTo(0, i);
+        c.lineTo(600, i);
         c.stroke();
-        i = i + 15;
-        setTimeout(lines,10);
+
+        i = i + 8;
     } else {
         i = 0;
-        c.strokeStyle = "white";
-        c.beginPath();
-        c.moveTo(100, 100+i);
-        c.lineTo(500, 100+i);
-        c.stroke();
-        c.beginPath();
-        c.moveTo(100+i, 100);
-        c.lineTo(100+i, 500);
-        c.stroke();
-        i = i + 15;
-        setTimeout(lines,10);
-    };
+        color = (color === "black") ? "white" : "black";
+    }
 };
 
-lines();
+setInterval(lines, 10);
